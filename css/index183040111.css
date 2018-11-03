@@ -1,0 +1,261 @@
+/* Penggunaan fonts */
+
+@font-face {
+    font-family: 'niramit';
+    src: url('../fonts/niramit.ttf');
+}
+
+@font-face {
+    font-family: 'chakra';
+    src: url('../fonts/chakrapetch.ttf');
+}
+
+/* Bagian utama */
+
+body {
+    background-image: url('../images/background.jpg');
+    background-repeat: repeat;
+    background-size: 256px;
+    padding: 0 0 96px;
+    font-family: niramit, sans-serif;
+    background-attachment: fixed;
+}
+
+.topbar {
+    background-color: #9bc53d;
+    border-bottom: 3px solid #e55934;
+    position: fixed;
+    margin: auto;
+    z-index: 99;
+    width: 100%;
+    padding: 5px 23px;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 2px 8px #2d2c2d;
+}
+
+.topbar p {
+    font-family: chakra, serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    transition: .1s ease;
+}
+
+.topbar p:hover {
+    color: #e8eaea;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Tombol Instagram */
+
+.instagram img {
+    position: absolute;
+    top: 8px;
+    right: -10px;
+    z-index: 80;
+    width: 40%;
+    max-width: 256px;
+}
+
+.instagram .top {
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.instagram .bot {
+    transition: .3s ease;
+}
+
+.instagram:hover .top {
+    opacity: 1;
+}
+
+.instagram:hover .bot {
+    opacity: 0;
+}
+
+/* Bagian isi */
+
+.container {
+    box-sizing: border-box;
+    position: relative;
+    width: 80%;
+    background-color: white;
+    top: 64px;
+    z-index: 50;
+    margin: 0 auto;
+    border-radius: 32px 32px 32px 32px;
+    box-shadow: 0px 0px 16px #2d2c2d;
+    max-width: 1080px;
+    min-width: 100.4px;
+}
+
+.container a:link {
+    color: #5bc0eb;
+    text-decoration: none;
+}
+
+.container a:visited {
+    color: #5bc0eb;
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: #2d2c2d;
+    text-decoration: underline;
+}
+
+/* Header */
+
+.header {
+    padding: 3px 0px 0px;
+}
+
+.header h1 {
+    font-family: chakra, serif;
+    padding-left: 15px;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.header p {
+    font-family: chakra, serif;
+    padding-left: 15px;
+}
+
+.header .bar {
+    width: 100%;
+    background-color: #2d2c2d;
+    border-bottom: 5px solid #e55934;
+}
+
+.header a:link {
+    color: #5bc0eb;
+    text-decoration: none;
+}
+
+.header a:visited {
+    color: #5bc0eb;
+    text-decoration: none;
+}
+
+.header .links  {
+    margin: 0px;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #2d2c2d;
+    display: inline-block;
+    min-width: 92.13px;
+    transition: .2s ease;
+}
+
+.header a:hover, .links:hover {
+    background-color: #9bc53d;
+    color: #234166;
+}
+
+/* Gambar besar (Overview) */
+
+.overview {
+    position: relative;
+    width: 100%;
+    background-color: #2d2c2d;
+    border-bottom: 5px solid #e55934;
+}
+
+.overview img {
+    width: 100%;
+}
+
+.beranda {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.text {
+    text-align: center;
+    color: #fde74c;
+    font-size: 20px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+}
+
+.overview:hover .beranda {
+    opacity: 0.3;
+}
+
+.overview:hover .text {
+    opacity: 1;
+}
+
+/* Artikel */
+
+.content {
+    box-sizing: border-box;
+    width: 69%;
+    padding: 14px 20px;
+    float: left;
+    text-align: justify;
+}
+
+.content h2 {
+    font-family: chakra, serif;
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+
+.p p {
+    text-indent: 31px;
+}
+
+.sidebar {
+    margin-top: 12px;
+    border-left: 2px solid #e55934;
+    box-sizing: border-box;
+    width: 30%;
+    padding: 11px;
+    float: left;
+    text-align: justify;
+}
+
+.sidebar h4 {
+    font-family: chakra, sherif;
+    font-size: 20px;
+}
+
+.sidebar img {
+    margin-right: 11px;
+    width: 50%;
+    float: left;
+}
+
+.sidebar p {
+    margin-top: -9px;
+    font-size: 15px;
+}
+
+/* Footer */
+
+.footer {
+    padding: 16px;
+    background-color: #2d2c2d;
+    color: #e8eaea;
+    text-align: center;
+    border-radius: 0 0 32px 32px;
+}
+
+.footer a:hover {
+    color: #e55934;
+}

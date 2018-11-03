@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: georgia;
+	background-color: #F9FF9E;
+}
+
+p {
+	margin: 8px 10px;
+}
+
+#page-wrap {
+	width: 50%;
+	margin: auto;
+	background-color: white;
+	padding: 16px;
+	min-height: 480px;
+}
+
+#content {
+	border-right: 1px solid #333;
+	width: 69%;
+	float: left;
+}
+
+#sidebar {
+	width: 30%;
+	float: right;
+}
+
+#footer {
+	text-align: center;
+	background-color: #333;
+	font-family: verdana;
+	color: white;
+	margin: 0 auto;
+	width: 50%;
+	padding: 10px 16px;
+	clear: both;
+}
+
+cite {
+	font-size: 14px;
+}
