@@ -46,6 +46,7 @@ body {
      background-size: cover;
      position: relative;
      background-repeat: repeat-x;
+     background-attachment: fixed;
  }
 
  .head-home {
@@ -68,4 +69,22 @@ body {
 
 .adjusting {
     margin-top: 6%;
+}
+
+.carousel-caption h5, .carousel-caption p {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-custom {
+    background-color: rgba(26, 26, 26, 0.753);
+}
+
+.footer {
+    width: 100%;
+     background-image: url('../assets/images/planets.png');
+     background-size: cover;
+     position: relative;
+     background-repeat: repeat-x;
+     background-attachment: fixed;
 }
