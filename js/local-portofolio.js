@@ -36,9 +36,9 @@ window.onscroll = function() {scrollWindow()};
 
 function scrollWindow() {
     if (document.body.scrollTop > 50 || $(window).width() < 960) {
-        document.getElementById("navigasi").className = "shadow-md alternav navbar navbar-expand-lg navbar-dark bg-secondary position-fixed border-secondary border-bottom w-100";
+        document.getElementById("navigasi").className = "shadow-lg alternav navbar navbar-expand-lg navbar-light bg-primary position-fixed border-primary border-bottom w-100";
     } else {
-        document.getElementById("navigasi").className = "alternav navbar navbar-expand-lg navbar-dark bg-transparent position-fixed border-secondary border-bottom w-100";
+        document.getElementById("navigasi").className = "alternav navbar navbar-expand-lg navbar-dark bg-transparent position-fixed border-primary border-bottom w-100";
     }
 }
 
